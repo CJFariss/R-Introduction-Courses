@@ -1,0 +1,48 @@
+#----------------------------------------------------------------------------------------------------#
+# DATA EXERCISE 1
+#----------------------------------------------------------------------------------------------------#
+
+###Making a Dataset of our R Class###
+
+#We want to generate a dataset that has a variable for our names, our gender, our class year, and the numeric month of our birthday.
+
+# STEP 1
+#Names: Create a vector with all the names of the people in this class
+
+#Tip 1: Have as much foresight as possible when manipulating data to try and save yourself steps down the road. In this case, we are going to order the names by gender since we know we want that in our data set. 
+
+Jaime, Meg, Meredith, Xiao, Ana, Taylor, Wen, Drew, Zach, Brian, Paul, Keenan, Ethan, Scott, Daniel, Rob, Doug, Greg, Ira, Chris
+
+#Tip #2: TextEdit and "Find and Replace" will be your friend. Copy and paste the above list of names into TextEdit and alter it so that the names are in quotes
+
+members <- c()
+
+# STEP 2
+#Gender. Use the "rep" command to generate a vector of people's genders based on the order in which they appear in your vector of names
+
+gender <- 
+
+
+#STEP 3
+#Year and Birth Month: Make vectors for people's graduation year and the month in which they were born (called "year" and "bdaymonth" respectively)
+
+
+
+
+#STEP 4
+#Bind the vectors together, using three different commands.
+
+Rclass <- data.frame(members, gender, year, bdaymonth)
+
+Rclassmatrix <- cbind(members, gender, year, bdaymonth)
+
+Rclassmatrix2 <- rbind(members, gender, year, bdaymonth)
+
+Rclassmatrix3 <- matrix(members, gender, year, bdaymonth)
+
+
+
+#What problem do you encounter in the last line of code?
+#What are the differences between these different objects?
+
+

@@ -1,0 +1,27 @@
+#----------------------------------------------------------------------------------------------------#
+# DATA EXERCISE 2
+#----------------------------------------------------------------------------------------------------#
+
+You job is to load in the Canadian Occupational Prestige Data found from this website:
+
+http://socserv.mcmaster.ca/jfox/Books/Companion/data.html
+
+
+Alternatively, if you have another dataset you are interested in using, you may explore that dataset. 
+
+1. Summarize the data--how many variables are there? how many cases?
+2. Look at subsets of the data 
+3. Recode a variable in a meaningful way
+4. Rename one of the variables. 
+
+
+Here a few questions you should be able to answer. In addition to providing the answer, be able to show the code you used to arrive at the answer. 
+
+1. How many occupations are listed in the dataset?
+2. Are there any duplicate census codes?
+3. Which occupation has the highest percentage of women?
+4. Which 10 occupations have the highest average level of education?
+5. How many "types" of occupations are there?
+6. Which occupations, on average, seem to require at least a high school degree (13 years of school)?
+7. Which blue collar jobs pay over $8,000?
+8. What is the mean prestige level?
