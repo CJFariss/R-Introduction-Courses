@@ -2,8 +2,9 @@
 R Introduction material for my undergraduate human rights courses. 
 
 ## Course links:
-1. [U-M Human Rights Winter 2022](http://cfariss.com/documents/U-M_HumanRights_Fall2022.pdf)
+1. [U-M Human Rights Winter 2022](http://cfariss.com/documents/U-M_HumanRights_Winter2022.pdf)
 2. [U-M Human Rights Fall 2021](http://cfariss.com/documents/U-M_HumanRights_Fall2021.pdf)
+3. [U-M Human Rights Winter 2021](http://cfariss.com/documents/U-M_HumanRights_Winter2021.pdf)
 
 ## Instructions
 For this research project, you should find data about some aspect of human rights within the region you selected. With the assistance of the instructor, identify a dataset that captures some aspect of human rights within your chosen region. Create a visualization of this data using R. On the first page of this assignment describe the data, where you obtained it, and what it measures. On the second page provide the visualization and an informative caption about the image. Anytime before the end of week 10, students are required to visit the instructor during office hours to discuss potential data sources for this assignment.
