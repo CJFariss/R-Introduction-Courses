@@ -2,7 +2,7 @@
 ##########################################################################
 ## Student name: your_first_name_here your_last_name_here
 ## COURSE NAME: Human Rights
-## University of Michigan, Winter 2021
+## University of Michigan, Fall 2022
 ##########################################################################
 
 ## hint01: you only need to know getwd(), read.csv(), and plot() or barplot() to complete the R plot assignment for class
@@ -10,10 +10,10 @@
 ## hint02: modify the code below for your own R graph
 
 
-## this line varifies that I'm in the working directory
+## this line verifies that I'm in the working directory
 getwd()
 
-## if you want to change the workin directory, you can use this line 
+## if you want to change the working directory, you can use this line 
 ## this line tells R where to find the files
 ##setwd("/Users/cjfariss/Documents/R1")
 

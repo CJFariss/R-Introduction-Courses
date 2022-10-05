@@ -2,7 +2,7 @@
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Human Rights
-## University of Michigan, Fall 2021
+## University of Michigan, Fall 2022
 ##
 ##
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
