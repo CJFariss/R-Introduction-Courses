@@ -39,7 +39,7 @@ getwd()
   
 ## set the working directory to another folder 
 ## for a Mac, it might look something like this: "/Users/CJFariss/Documents/R1"
-setwd("/Users/CJFariss/Documents/R1")
+#setwd("/Users/CJFariss/Documents/R1")
 
 ## list objects in the working environment
 ls() 
@@ -90,6 +90,10 @@ var + 3
 ## To learn what you need to input into a function type in help(function) or ?function_name, where "function_name" is the name of the function you want. For example, e.g., ?ls
 ?ls
 
+add_function <- function(a,b){
+  a+b
+}
+add_function(2,5)
 
 #Notice that all of this code produces the same answer
 log(100)
@@ -144,9 +148,10 @@ library(foreign)
 ## You can import files straight from the Internet
 macro <- read.csv("http://cfariss.com/code/macro.csv")
 
-## or from the workin directory
+## or from the working directory
 macro <- read.csv("macro.csv")
 
+setwd("/Users/christopherfariss/Documents/GitHub/R-Introduction-Courses/easyRplots")
 
 ## In the beginning, I found that this was one of the more frustrating aspects of learning R, but once you get the hang of it, it is less of a hassle
 
@@ -170,16 +175,18 @@ macro <- read.csv("macro.csv")
 
 ## place the object macro into the parentheses of the function
 names(macro)
-dim(smacro)
+dim(macro)
 nrow(macro)
 ncol(macro)
 dim(macro)[1]
 dim(macro)[2]
 
+head(macro)
 
 ## Next, you might want to look at specific variables. To do this, you use the format "dataset$variablename"
 macro$country
 
+macro$gdp
 
 ## What if you want to know how many cases are in each of the different values for country?
 table(macro$country)
@@ -220,10 +227,13 @@ macro[15:30, 1:3]
 
 ## read in data using read.csv() function
 data <- read.csv("http://cfariss.com/code/ny_stop_frisk.csv")
-#data <- read.csv("ny_stop_frisk.csv")
+#
+data <- read.csv("ny_stop_frisk.csv")
 
 COLOR <- "lightblue"
 
+## make a basic version of the plot
+barplot(data$total, ylab="Stop and Frisks", names.arg=data$race, col=COLOR, main="Stop and Frisks by Race in 2012")
 
 ## make a plot using the barplot() function
 barplot(data$total,
@@ -247,6 +257,8 @@ box() # add box around plot region
 ## read in data using read.csv() function
 data <- read.csv("http://cfariss.com/code/ny_stop_frisk_black.csv")
 #data <- read.csv("ny_stop_frisk_black.csv")
+
+plot(data$total, ylim=c(0,400000))
 
 ## make a plot using the plot() function
 plot(data$total,
