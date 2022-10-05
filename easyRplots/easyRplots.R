@@ -30,7 +30,7 @@
 ## When you open R, you are greeted by a prompt: >
 ## > is called a right chevron 
 ## This is the character that indicates you can type in your command
-## Your output will be prefaced by an index for the line number, such as [1]
+## Line output will be prefaced by an index for the line number, such as [1]
 ## The # character is what we call the "comment" character (you can also use double backspace to comment which is like C or C++ '//'). 
 ## When you want to write something in your code that you don't want to run, you need to "comment it out."
 
@@ -53,6 +53,16 @@ ls()
 
 
 ##----------------------------------------------------------------------------------------------------#
+## Assignment operator <- 
+##----------------------------------------------------------------------------------------------------#
+
+## use the assignment operator to assign a value (the number 2) to an object in memory
+var <- 2
+
+## print the value for the var object to screen
+var
+
+##----------------------------------------------------------------------------------------------------#
 ## R IS JUST A FANCY CALCULATOR
 ##----------------------------------------------------------------------------------------------------#
 
@@ -62,12 +72,22 @@ ls()
 
 4^2-3*2
 
-## In addition to common arithmetic operations, R has hundreds of other functions, 
-## for everything from mathematical operations to data analysis, to making graphs
 
-## to learn what you need to input into a function 
-## type in help(function) or ?function_name, where "function_name" is the name of the function you want
-## e.g., ?ls
+## add a value to the var object
+var + 3
+
+4^var-3*var
+
+
+##----------------------------------------------------------------------------------------------------#
+## R contains lots of functions
+##----------------------------------------------------------------------------------------------------#
+
+## functions take an input and return an output
+
+## In addition to common arithmetic operations, R has hundreds of other functions,for everything from mathematical operations to data analysis, to making graphs
+
+## To learn what you need to input into a function type in help(function) or ?function_name, where "function_name" is the name of the function you want. For example, e.g., ?ls
 ?ls
 
 
@@ -76,6 +96,14 @@ log(100)
 log(100, base=10)
 log(100, 10)
 
+## pi is an irrational number pre-loaded as object in R
+pi
+
+## print using the print() function
+print(pi, digits=10)
+
+## print using the print() function
+print(pi, digits=22)
 
 ##----------------------------------------------------------------------------------------------------#
 ## LOADING IN DATA
@@ -132,14 +160,15 @@ macro <- read.csv("macro.csv")
 ## A good first step is to get a sense of the size and an overview of your data. 
 ## These are some commands--fill in the parentheses with the name of your data, in this case, "macro", i.e. names(macro)
 
-names()
-dim()
-nrow()
-ncol()
-dim()[1]
-dim()[2]
+## commented-out commands
+#names()
+#dim()
+#nrow()
+#ncol()
+#dim()[1]
+#dim()[2]
 
-## place the object macro into the parantheses of the function
+## place the object macro into the parentheses of the function
 names(macro)
 dim(smacro)
 nrow(macro)
@@ -156,7 +185,8 @@ macro$country
 table(macro$country)
 
 
-## You might want a quick summary of a variable. Notice that the summary you get back depends on which kind of variable you have
+## You might want a quick summary of a variable. 
+## Notice that the summary you get back depends on which kind of variable you have
 summary(macro$country)
 summary(macro$gdp)
 
