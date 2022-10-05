@@ -36,7 +36,7 @@
 
 ## what is the current working directory?
 getwd()
-
+  
 ## set the working directory to another folder 
 ## for a Mac, it might look something like this: "/Users/CJFariss/Documents/R1"
 setwd("/Users/CJFariss/Documents/R1")
