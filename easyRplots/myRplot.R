@@ -2,7 +2,7 @@
 ##########################################################################
 ## Student name: your_first_name_here your_last_name_here
 ## COURSE NAME: Human Rights
-## University of Michigan, Fall 2022
+## University of Michigan, Winter 2023, Fall 2022
 ##########################################################################
 
 ## hint01: you only need to know getwd(), read.csv(), and plot() or barplot() to complete the R plot assignment for class
