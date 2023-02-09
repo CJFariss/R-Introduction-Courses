@@ -2,7 +2,7 @@
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Human Rights
-## University of Michigan, Fall 2022
+## University of Michigan, Winter 2023, Fall 2022
 ##
 ##
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
@@ -227,8 +227,8 @@ macro[15:30, 1:3]
 
 ## read in data using read.csv() function
 data <- read.csv("http://cfariss.com/code/ny_stop_frisk.csv")
-#
-data <- read.csv("ny_stop_frisk.csv")
+data <- read.csv("easyRplots/ny_stop_frisk.csv")
+#data <- read.csv("ny_stop_frisk.csv")
 
 COLOR <- "lightblue"
 
@@ -256,6 +256,7 @@ box() # add box around plot region
 
 ## read in data using read.csv() function
 data <- read.csv("http://cfariss.com/code/ny_stop_frisk_black.csv")
+data <- read.csv("easyRplots/ny_stop_frisk_black.csv")
 #data <- read.csv("ny_stop_frisk_black.csv")
 
 plot(data$total, ylim=c(0,400000))
