@@ -18,7 +18,7 @@ getwd()
 ##setwd("/Users/cjfariss/Documents/R1")
 
 ## read in data file from csv file
-data <- read.csv("ny_stop_frisk.csv")
+data <- read.csv("easyRplots/ny_stop_frisk.csv")
 
 ## print data to screen
 data
@@ -30,7 +30,7 @@ data$total
 barplot(data$total)
 
 ## read in data file from csv file
-data <- read.csv("ny_stop_frisk_black.csv")
+data <- read.csv("easyRplots/ny_stop_frisk_black.csv")
 
 ## print the data to screen
 data
