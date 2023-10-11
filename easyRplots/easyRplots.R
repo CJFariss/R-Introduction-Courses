@@ -2,8 +2,8 @@
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Human Rights
-## University of Michigan, Winter 2023, Fall 2022
-##
+## University of Michigan, Fall 2023, Winter 2023, Fall 2022, Winter 2022, Fall 2021, Winter 2021, Winter 2020, Winter 2019, Winter 2018, Winter 2017 
+## Penn State University, Spring 2015, Spring 2014, Fall 2013
 ##
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
 ## e-mail: cjf0006@gmail.com
@@ -149,9 +149,8 @@ library(foreign)
 macro <- read.csv("http://cfariss.com/code/macro.csv")
 
 ## or from the working directory
-macro <- read.csv("macro.csv")
+macro <- read.csv("easyRplots/macro.csv")
 
-setwd("/Users/christopherfariss/Documents/GitHub/R-Introduction-Courses/easyRplots")
 
 ## In the beginning, I found that this was one of the more frustrating aspects of learning R, but once you get the hang of it, it is less of a hassle
 
