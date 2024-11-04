@@ -2,7 +2,7 @@
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Human Rights
-## University of Michigan, Fall 2023, Winter 2023, Fall 2022, Winter 2022, Fall 2021, Winter 2021, Winter 2020, Winter 2019, Winter 2018, Winter 2017 
+## University of Michigan, Fall 2024, Fall 2023, Winter 2023, Fall 2022, Winter 2022, Fall 2021, Winter 2021, Winter 2020, Winter 2019, Winter 2018, Winter 2017 
 ## Penn State University, Spring 2015, Spring 2014, Fall 2013
 ##
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
@@ -12,8 +12,9 @@
 ## Introduction to tutorial:
 ##
 ## download R for free: https://cran.r-project.org/
-## also download Rstudio for free: https://rstudio.com/ (https://rstudio.com/products/rstudio/download/#download)
-##
+## also download Rstudio for free: https://posit.co/download/rstudio-desktop/
+## formerly here: https://rstudio.com/ (https://rstudio.com/products/rstudio/download/#download)
+## 
 ## For this R tutorial, we will learn how:
 ##
 ##  (1) to find and change the working directory,
@@ -33,6 +34,7 @@
 ## Line output will be prefaced by an index for the line number, such as [1]
 ## The # character is what we call the "comment" character (you can also use double backspace to comment which is like C or C++ '//'). 
 ## When you want to write something in your code that you don't want to run, you need to "comment it out."
+## code I want to try
 
 ## what is the current working directory?
 getwd()
@@ -40,6 +42,15 @@ getwd()
 ## set the working directory to another folder 
 ## for a Mac, it might look something like this: "/Users/CJFariss/Documents/R1"
 #setwd("/Users/CJFariss/Documents/R1")
+
+## add 2 numbers together using the + "plus sign" operator
+2 + 2
+
+## make an object using the "assignment" operator
+object <- 2
+
+## print to screen
+object
 
 ## list objects in the working environment
 ls() 
@@ -88,11 +99,14 @@ var + 3
 ## In addition to common arithmetic operations, R has hundreds of other functions,for everything from mathematical operations to data analysis, to making graphs
 
 ## To learn what you need to input into a function type in help(function) or ?function_name, where "function_name" is the name of the function you want. For example, e.g., ?ls
+?rm
 ?ls
 
 add_function <- function(a,b){
   a+b
 }
+add_function
+
 add_function(2,5)
 
 #Notice that all of this code produces the same answer
@@ -220,7 +234,7 @@ macro[15:30, 1:3]
 # R Makes very nice graphs (this code can be adapted for your assignment)
 #----------------------------------------------------------------------------------------------------#
 
-## NOTE that you can google: "Qucik R graphical parameters" for a good resource for making graphs
+## NOTE that you can google: "Quick R graphical parameters" for a good resource for making graphs
 ## the URL is here: http://www.statmethods.net/advgraphs/parameters.html
 ## R color names are available here: http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
 
@@ -229,7 +243,17 @@ data <- read.csv("http://cfariss.com/code/ny_stop_frisk.csv")
 data <- read.csv("easyRplots/ny_stop_frisk.csv")
 #data <- read.csv("ny_stop_frisk.csv")
 
+data
+
 COLOR <- "lightblue"
+COLOR
+
+data$total
+
+## most basic version
+barplot(data$total)
+
+?barplot
 
 ## make a basic version of the plot
 barplot(data$total, ylab="Stop and Frisks", names.arg=data$race, col=COLOR, main="Stop and Frisks by Race in 2012")
@@ -258,7 +282,12 @@ data <- read.csv("http://cfariss.com/code/ny_stop_frisk_black.csv")
 data <- read.csv("easyRplots/ny_stop_frisk_black.csv")
 #data <- read.csv("ny_stop_frisk_black.csv")
 
+plot(data$total)
+
 plot(data$total, ylim=c(0,400000))
+
+
+c(0,400000)
 
 ## make a plot using the plot() function
 plot(data$total,
